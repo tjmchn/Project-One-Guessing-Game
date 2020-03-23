@@ -19,7 +19,10 @@ def begin_game():
         print('*' * 40)
         print("  Welcome to the Number Guessing Game!")
         print('*' * 40)
-        print("\nThe rules are simple...\n\nChoose a number 1 - 10 (inclusive) until\nyou guess the number. The less attempts\nyou take the better. Good luck!")
+        print("\nThe rules are simple...\n\n"
+              "Choose a number 1 - 10 (inclusive) until\n"
+              "you guess the number. The less attempts\n"
+              "you take the better. Good luck!")
         print("\nNo HIGHSCORE has been set. Go get it!")
         
         
@@ -68,9 +71,6 @@ def replay_or_end():
                 print("\nThe game is ending... Play again soon :)\n")
                 break
             if play_again.lower() == "y": 
-                random_number()
-                attempts = 1
-                guess = 0
                 start_game()
                 break
             else:
